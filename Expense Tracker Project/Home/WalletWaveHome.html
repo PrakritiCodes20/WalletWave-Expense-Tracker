@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalletWave Home</title>
+    <link rel="stylesheet" href="WalletWaveHome.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img
+          src="WalletWave logo.jpeg"
+          alt="WalletWave Logo"
+          class="nav-logo"
+        />
+
+        <div class="nav-brand">
+          <h1>WalletWave</h1>
+          <p>Your Money, Your Control</p>
+        </div>
+        <button id="themeToggle">🌙 Dark Mode</button>
+      </nav>
+
+      <!-- Welcome Hero Banner -->
+
+      <section class="hero-banner">
+        <div class="hero-content">
+          <span class="hero-tag">YOUR PERSONAL FINANCE PARTNER</span>
+
+          <h2>Welcome to WalletWave</h2>
+
+          <p>
+            Take control of your money, track your expenses, and build smarter
+            saving habits.
+          </p>
+
+          <h3>Save Smart. Spend Wise. Live Better.</h3>
+        </div>
+
+        <div class="hero-illustration">
+          <div class="hero-circle">💰</div>
+          <span class="hero-icon icon-one">📈</span>
+          <span class="hero-icon icon-two">💳</span>
+          <span class="hero-icon icon-three">✨</span>
+        </div>
+      </section>
+
+      <main>
+        <div class="card">
+          <div id="card1"><p>Current Balance: $0</p></div>
+          <div id="card2"><p>Income : $0</p></div>
+          <div id="card3"><p>Expense :$0</p></div>
+        </div>
+        <br /><br /><br />
+
+        <div class="savings-navigation">
+          <h2>Want to Save More?</h2>
+          <p>Set your savings goals and track your progress.</p>
+
+          <a href="../SavingGoal/SavingsGoal.html">
+            <button type="button">Savings Goals 🎯</button>
+          </a>
+        </div>
+
+        <div class="budget">
+          <h2>Monthly Budget</h2>
+
+          <label for="budgetAmount">Set Your Budget:</label>
+          <input type="number" id="budgetAmount" placeholder="Enter amount" />
+
+          <button type="button" id="setBudgetBtn">Set Budget</button>
+
+          <p id="budgetDisplay">Monthly Budget: ₹0</p>
+          <p id="spentDisplay">Total Spent: ₹0</p>
+          <p id="remainingDisplay">Remaining: ₹0</p>
+
+          <div class="progress-container">
+            <div id="budgetProgress"></div>
+          </div>
+
+          <p id="progressText">0% Used</p>
+          <p id="budgetAlert"></p>
+        </div>
+
+        <div class="Detail">
+          <div class="form">
+            <div class="form-header">
+              <div class="form-icon">💳</div>
+              <div>
+                <h2>Transaction Manager</h2>
+                <p>Manage your money smartly!</p>
+              </div>
+            </div>
+
+            <form>
+              <div class="form-group">
+                <label for="Fields">Fields:</label>
+                <select name="Fields" id="Fields">
+                  <option value="">Fields</option>
+                  <option value="salary">Salary</option>
+                  <option value="milk">Milk</option>
+                  <option value="shopping">Shopping</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="amount">Amount:</label>
+                <select name="Amount" id="amount">
+                  <option value="">Amount</option>
+                  <option value="250">250</option>
+                  <option value="5000">5000</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                  <option value="">Select</option>
+                  <option value="Food">Food</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Education">Education</option>
+                  <option value="Medical">Medical</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Transaction Type:</label>
+                <div class="type-options">
+                  <label for="income">Income</label>
+                  <input type="radio" name="type" id="income" />
+                  <label for="expense">Expense</label>
+                  <input type="radio" name="type" id="expense" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" name="Date" id="date" />
+              </div>
+
+              <button type="button" id="addBtn">+ Add Transaction</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer">
+          <marquee behavior="" direction="right">
+            Welcome to WalletWave!
+          </marquee>
+        </div>
+      </footer>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="WalletWaveHome.js"></script>
+  </body>
+</html>

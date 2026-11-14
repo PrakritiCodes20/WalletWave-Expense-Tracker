@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History Card</title>
+    <link rel="stylesheet" href="HistoryCard.css" />
+  </head>
+  <body>
+    <div class="history-header">
+      <h1>Transaction History</h1>
+      <a href="WalletWaveHome.html">← Back to Dashboard</a>
+    </div>
+
+    <div class="history-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search transactions..."
+        />
+      </div>
+
+      <button id="downloadReportBtn">⬇ Download Report</button>
+    </div>
+
+    <!-- Analytics Dashboard -->
+    <section class="analytics-grid">
+      <!-- Income vs Expense Chart -->
+      <div class="chart-card">
+        <h2>Income vs Expense</h2>
+        <canvas id="incomeExpenseChart"></canvas>
+      </div>
+
+      <!-- Monthly Expense Chart -->
+      <div class="chart-card">
+        <h2>Monthly Expense Analysis</h2>
+        <canvas id="monthlyExpenseChart"></canvas>
+      </div>
+
+      <!-- Category-wise Expense Chart -->
+      <div class="chart-card">
+        <h2>Category-wise Expense</h2>
+        <canvas id="expenseChart"></canvas>
+      </div>
+    </section>
+
+    <table class="table">
+      <thead class="head">
+        <tr class="row">
+          <th>Field</th>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="historyTable"></tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="HistoryCard.js"></script>
+  </body>
+</html>

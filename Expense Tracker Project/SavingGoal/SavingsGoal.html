@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SavingsGoal</title>
+    <link rel="stylesheet" href="SavingsGoal.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WalletWave</h1>
+      <a href="../Home/WalletWaveHome.html">Back to Home</a>
+    </header>
+    <main>
+      <h2>My Savings Goals 🎯</h2>
+      <p>Set your goals and track how much you save.</p>
+
+      <section id="goalForm">
+        <h3>Create New Goal</h3>
+
+        <form id="savingsForm">
+          <label for="goalName">Goal Name</label>
+          <input
+            type="text"
+            id="goalName"
+            placeholder="e.g. Buy a Laptop"
+            required
+          />
+
+          <label for="targetAmount">Target Amount (₹)</label>
+          <input
+            type="number"
+            id="targetAmount"
+            placeholder="e.g. 50000"
+            min="1"
+            required
+          />
+
+          <label for="savedAmount">Already Saved (₹)</label>
+          <input
+            type="number"
+            id="savedAmount"
+            placeholder="e.g. 10000"
+            min="0"
+            value="0"
+            required
+          />
+
+          <button type="submit">Add Goal</button>
+        </form>
+      </section>
+
+      <section id="goalsContainer">
+        <!-- Savings goals will appear here -->
+      </section>
+    </main>
+
+    <script src="savings.js"></script>
+  </body>
+</html>

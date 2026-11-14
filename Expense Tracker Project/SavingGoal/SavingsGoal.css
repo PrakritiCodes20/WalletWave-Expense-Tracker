@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172b4d;
+}
+header {
+  background: #172b4d;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  background: #20b486;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+main {
+  width: 85%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+main h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+main > p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+#goalForm,
+.goal-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 92%;
+  }
+  header {
+    padding: 16px 4%;
+  }
+
+  main h2 {
+    font-size: 23px;
+  }
+}
+
+#goalForm h3 {
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+#savingsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#savingsForm label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#savingsForm input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+#savingsForm input:focus {
+  border-color: #20b486;
+}
+
+#savingsForm button {
+  background: #20b486;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#savingsForm button:hover {
+  background: #15956c;
+}
+
+.goal-progress {
+  width: 100%;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.goal-progress-fill {
+  height: 100%;
+  background: #20b486;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+.goal-complete {
+  color: #15956c;
+  background: #e6f8f1;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.goal-card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-right: 8px;
+  color: white;
+  background: #20b486;
+}
+
+.goal-card button:hover {
+  opacity: 0.85;
+}
+
+.goal-card button:last-child {
+  background: #e05252;
+}

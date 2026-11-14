@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WalletWave | Sign Up</title>
+
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+
+  <body>
+    <main class="signup-container">
+      <h1>Create Your Account</h1>
+
+      <p class="signup-subtitle">Join WalletWave - Your Money, Your Control</p>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="First">First Name</label>
+          <input
+            type="text"
+            id="First"
+            placeholder="Enter your first name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Last">Last Name</label>
+          <input
+            type="text"
+            id="Last"
+            placeholder="Enter your last name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Email">Email Address</label>
+          <input
+            type="email"
+            id="Email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Phone">Phone Number</label>
+          <input
+            type="tel"
+            id="Phone"
+            placeholder="Enter your phone number"
+            minlength="10"
+            maxlength="15"
+            pattern="[0-9]{10,15}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Create">Create Password</label>
+          <input
+            type="password"
+            id="Create"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Confirm">Confirm Password</label>
+          <input
+            type="password"
+            id="Confirm"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+
+        <div class="terms-group">
+          <input type="checkbox" id="Checkbox" required />
+
+          <label for="Checkbox"> I agree to the terms and conditions </label>
+        </div>
+        <div id="signupMessage"></div>
+        <button type="submit" class="signup-btn">Create Account</button>
+
+        <p class="login-link">
+          Already have an account?
+          <a href="Login.html">Login</a>
+        </p>
+      </form>
+    </main>
+
+    <script src="SignUp.js"></script>
+  </body>
+</html>
